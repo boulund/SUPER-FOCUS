@@ -331,7 +331,7 @@ def runSUPERFOCUS():
     #OUTPUT: Results in the function level
     def write_functions(function_assignments):
             S=sum(function_assignments.values())*1.
-            o=open(project_output+"/"+project_name+"__results__all_levels_and_function.xls","w+")
+            o=open(project_output+"/"+project_name+"_____results__all_levels_and_function.xls","w+")
             o.write("Query: "+query+"\nDB: DB_"+str(mydb)+"\n\nSubsystem Level 1\tSubsystem Level 2\tSubsystem Level 3\tSEED Function\tNumber of assignments\tRelative Abundance (%)\n")
             funcsort=function_assignments.keys();funcsort.sort()
             for assignment in funcsort:
@@ -414,7 +414,7 @@ def runSUPERFOCUS():
 
 def CombineFiles(project_name):
     #sufix for the files that we want to target
-    targets=["__results_subsystem_level_1.xls","__results_subsystem_level_2.xls","__results_subsystem_level_3.xls","__results__all_levels_and_function.xls"]
+    targets=["__results_subsystem_level_1.xls","__results_subsystem_level_2.xls","__results_subsystem_level_3.xls","_____results__all_levels_and_function.xls"]
 
     for target in targets:
         #hash to store all the combined ingo
